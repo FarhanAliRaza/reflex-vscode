@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "comment": "Single source of truth for embedded-language contexts in Reflex Python code. Consumed by syntaxes/generate.py (TextMate injection grammar) and src/regions.ts (completion region scanner). Triggers must stay compatible with both Oniguruma and ECMAScript regex: no lookbehind, non-capturing groups only.",
+  "tagLanguages": {
+    "js": "javascript",
+    "javascript": "javascript",
+    "jsx": "javascriptreact",
+    "ts": "typescript",
+    "typescript": "typescript",
+    "css": "css",
+    "html": "html"
+  },
+  "kwargBlocklist": [
+    "all",
+    "alt",
+    "clip",
+    "columns",
+    "container",
+    "content",
+    "cx",
+    "cy",
+    "d",
+    "direction",
+    "fill",
+    "mask",
+    "offset",
+    "order",
+    "page",
+    "prefix",
+    "quotes",
+    "r",
+    "resize",
+    "rotate",
+    "rx",
+    "ry",
+    "scale",
+    "size",
+    "speak",
+    "src",
+    "stroke",
+    "suffix",
+    "translate",
+    "x",
+    "y",
+    "zoom"
+  ],
+  "pseudoProps": [
+    "_hover",
+    "_focus",
+    "_focus_within",
+    "_focus_visible",
+    "_active",
+    "_visited",
+    "_disabled",
+    "_checked",
+    "_placeholder",
+    "_before",
+    "_after",
+    "_selected",
+    "_first",
+    "_last",
+    "_odd",
+    "_even",
+    "_empty"
+  ],
+  "contexts": [
+    {
+      "id": "js-call",
+      "kind": "string-arg",
+      "trigger": "\\b(?:rx\\s*\\.\\s*)?(?:call_script|run_script|call_function)\\s*\\(",
+      "language": "javascript",
+      "tmContentName": "meta.embedded.block.javascript",
+      "tmInclude": "source.js"
+    },
+    {
+      "id": "js-var",
+      "kind": "string-arg",
+      "trigger": "\\b(?:rx\\s*\\.\\s*)?Var\\s*\\(",
+      "language": "javascript",
+      "tmContentName": "meta.embedded.block.javascript",
+      "tmInclude": "source.js"
+    },
+    {
+      "id": "js-var-kwarg",
+      "kind": "string-arg",
+      "trigger": "\\b_js_expr\\s*=(?!=)",
+      "language": "javascript",
+      "tmContentName": "meta.embedded.block.javascript",
+      "tmInclude": "source.js"
+    },
+    {
+      "id": "js-script",
+      "kind": "string-arg",
+      "trigger": "\\brx\\s*\\.\\s*(?:el\\s*\\.\\s*)?script\\s*\\(",
+      "language": "javascript",
+      "tmContentName": "meta.embedded.block.javascript",
+      "tmInclude": "source.js"
+    },
+    {
+      "id": "html",
+      "kind": "string-arg",
+      "trigger": "\\brx\\s*\\.\\s*(?:el\\s*\\.\\s*)?html\\s*\\(",
+      "language": "html",
+      "tmContentName": "meta.embedded.block.html",
+      "tmInclude": "text.html.basic"
+    },
+    {
+      "id": "css-el-style",
+      "kind": "string-arg",
+      "trigger": "\\brx\\s*\\.\\s*el\\s*\\.\\s*style\\s*\\(",
+      "language": "css",
+      "tmContentName": "meta.embedded.block.css",
+      "tmInclude": "source.css"
+    },
+    {
+      "id": "css-kwarg",
+      "kind": "css-kwarg",
+      "language": "css-value",
+      "tmContentName": "meta.embedded.inline.css",
+      "tmInclude": "source.css#property-values"
+    },
+    {
+      "id": "style-dict",
+      "kind": "style-dict",
+      "triggers": [
+        "\\b(?:style|STYLE_PSEUDO_PROPS)\\s*=\\s*(?=\\{)",
+        "\\brx\\s*\\.\\s*Style\\s*\\(\\s*(?=\\{)"
+      ],
+      "language": "css-value",
+      "tmContentName": "meta.embedded.inline.css",
+      "tmInclude": "source.css#property-values"
+    },
+    {
+      "id": "classname",
+      "kind": "class-string",
+      "trigger": "\\bclass_name\\s*=(?!=)",
+      "language": "tailwind",
+      "tmContentName": "meta.embedded.inline.tailwind-classes"
+    },
+    {
+      "id": "tag-inline",
+      "kind": "tag-inline"
+    },
+    {
+      "id": "tag-preceding",
+      "kind": "tag-preceding",
+      "commentPattern": "#\\s*(?:language\\s*=\\s*|lang[:=]\\s*)?(TAGS)\\s*$"
+    },
+    {
+      "id": "method-body",
+      "kind": "method-body",
+      "methods": ["add_hooks", "add_custom_code", "_get_custom_code"],
+      "language": "javascriptreact",
+      "tmContentName": "meta.embedded.block.javascriptreact",
+      "tmInclude": "source.js.jsx",
+      "experimental": true
+    }
+  ]
+}

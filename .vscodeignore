@@ -1,0 +1,13 @@
+.vscode/**
+.gitignore
+DEVELOPMENT.md
+tools/**
+src/**
+node_modules/**
+test/**
+fixtures/**
+scripts/**
+esbuild.mjs
+tsconfig.json
+pnpm-lock.yaml
+**/*.map

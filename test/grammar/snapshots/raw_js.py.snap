@@ -1,0 +1,260 @@
+>import reflex as rx
+  "import" : keyword.control.import.python
+  "reflex" : 
+  "as" : keyword.control.import.python
+  "rx" : 
+>from reflex.vars import Var
+  "from" : keyword.control.import.python
+  "reflex" : 
+  "." : punctuation.separator.period.python
+  "vars" : 
+  "import" : keyword.control.import.python
+  "Var" : 
+>
+>
+>class State(rx.State):
+  "class" : meta.class.python storage.type.class.python
+  "State" : meta.class.python entity.name.type.class.python
+  "(" : meta.class.python meta.class.inheritance.python punctuation.definition.inheritance.begin.python
+  "rx" : meta.class.python meta.class.inheritance.python entity.other.inherited-class.python
+  "." : meta.class.python meta.class.inheritance.python meta.member.access.python punctuation.separator.period.python
+  "State" : meta.class.python meta.class.inheritance.python meta.member.access.python entity.other.inherited-class.python
+  ")" : meta.class.python meta.class.inheritance.python punctuation.definition.inheritance.end.python
+  ":" : meta.class.python punctuation.section.class.begin.python
+>    def play(self):
+  "def" : meta.function.python storage.type.function.python
+  "play" : meta.function.python entity.name.function.python
+  "(" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.begin.python
+  "self" : meta.function.python meta.function.parameters.python variable.parameter.function.language.python variable.parameter.function.language.special.self.python
+  ")" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.end.python
+  ":" : meta.function.python punctuation.section.function.begin.python
+>        return rx.call_script("playFromStart(button_sfx)")
+  "return" : keyword.control.flow.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "call_script" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"" : punctuation.definition.string.begin.python
+  "playFromStart" : meta.embedded.block.javascript meta.function-call.js entity.name.function.js
+  "(" : meta.embedded.block.javascript meta.brace.round.js
+  "button_sfx" : meta.embedded.block.javascript variable.other.readwrite.js
+  ")" : meta.embedded.block.javascript meta.brace.round.js
+  "\"" : punctuation.definition.string.end.python
+  ")" : 
+>
+>    def get_location(self):
+  "def" : meta.function.python storage.type.function.python
+  "get_location" : meta.function.python entity.name.function.python
+  "(" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.begin.python
+  "self" : meta.function.python meta.function.parameters.python variable.parameter.function.language.python variable.parameter.function.language.special.self.python
+  ")" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.end.python
+  ":" : meta.function.python punctuation.section.function.begin.python
+>        return rx.call_script(
+  "return" : keyword.control.flow.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "call_script" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+>            "window.location", callback=State.update_location
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.begin.python
+  "window.location" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+  "callback" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python variable.parameter.function-call.python
+  "=" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python keyword.operator.assignment.python
+  "State" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python punctuation.separator.period.python
+  "update_location" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.attribute.python
+>        )
+  ")" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+>
+>    def scroll(self):
+  "def" : meta.function.python storage.type.function.python
+  "scroll" : meta.function.python entity.name.function.python
+  "(" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.begin.python
+  "self" : meta.function.python meta.function.parameters.python variable.parameter.function.language.python variable.parameter.function.language.special.self.python
+  ")" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.end.python
+  ":" : meta.function.python punctuation.section.function.begin.python
+>        return rx.run_script("window.scrollTo({top: 0, behavior: 'smooth'})")
+  "return" : keyword.control.flow.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "run_script" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"" : punctuation.definition.string.begin.python
+  "window" : meta.embedded.block.javascript meta.function-call.js variable.other.object.js
+  "." : meta.embedded.block.javascript meta.function-call.js punctuation.accessor.js
+  "scrollTo" : meta.embedded.block.javascript meta.function-call.js entity.name.function.js
+  "(" : meta.embedded.block.javascript meta.brace.round.js
+  "{" : meta.embedded.block.javascript meta.objectliteral.js punctuation.definition.block.js
+  "top" : meta.embedded.block.javascript meta.objectliteral.js meta.object.member.js meta.object-literal.key.js
+  ":" : meta.embedded.block.javascript meta.objectliteral.js meta.object.member.js meta.object-literal.key.js punctuation.separator.key-value.js
+  "0" : meta.embedded.block.javascript meta.objectliteral.js meta.object.member.js constant.numeric.decimal.js
+  "," : meta.embedded.block.javascript meta.objectliteral.js punctuation.separator.comma.js
+  "behavior" : meta.embedded.block.javascript meta.objectliteral.js meta.object.member.js meta.object-literal.key.js
+  ":" : meta.embedded.block.javascript meta.objectliteral.js meta.object.member.js meta.object-literal.key.js punctuation.separator.key-value.js
+  "'" : meta.embedded.block.javascript meta.objectliteral.js meta.object.member.js string.quoted.single.js punctuation.definition.string.begin.js
+  "smooth" : meta.embedded.block.javascript meta.objectliteral.js meta.object.member.js string.quoted.single.js
+  "'" : meta.embedded.block.javascript meta.objectliteral.js meta.object.member.js string.quoted.single.js punctuation.definition.string.end.js
+  "}" : meta.embedded.block.javascript meta.objectliteral.js punctuation.definition.block.js
+  ")" : meta.embedded.block.javascript meta.brace.round.js
+  "\"" : punctuation.definition.string.end.python
+  ")" : 
+>
+>    def call(self):
+  "def" : meta.function.python storage.type.function.python
+  "call" : meta.function.python entity.name.function.python
+  "(" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.begin.python
+  "self" : meta.function.python meta.function.parameters.python variable.parameter.function.language.python variable.parameter.function.language.special.self.python
+  ")" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.end.python
+  ":" : meta.function.python punctuation.section.function.begin.python
+>        return rx.call_function("() => window.confirm('sure?')")
+  "return" : keyword.control.flow.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "call_function" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"" : punctuation.definition.string.begin.python
+  "(" : meta.embedded.block.javascript meta.arrow.js meta.parameters.js punctuation.definition.parameters.begin.js
+  ")" : meta.embedded.block.javascript meta.arrow.js meta.parameters.js punctuation.definition.parameters.end.js
+  "=>" : meta.embedded.block.javascript meta.arrow.js storage.type.function.arrow.js
+  "window" : meta.embedded.block.javascript meta.function-call.js variable.other.object.js
+  "." : meta.embedded.block.javascript meta.function-call.js punctuation.accessor.js
+  "confirm" : meta.embedded.block.javascript meta.function-call.js entity.name.function.js
+  "(" : meta.embedded.block.javascript meta.brace.round.js
+  "'" : meta.embedded.block.javascript string.quoted.single.js punctuation.definition.string.begin.js
+  "sure?" : meta.embedded.block.javascript string.quoted.single.js
+  "'" : meta.embedded.block.javascript string.quoted.single.js punctuation.definition.string.end.js
+  ")" : meta.embedded.block.javascript meta.brace.round.js
+  "\"" : punctuation.definition.string.end.python
+  ")" : 
+>
+>
+>filter_var = rx.Var("((edge) => edge.id !== 'e1')")
+  "filter_var" : 
+  "=" : keyword.operator.assignment.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "Var" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"" : punctuation.definition.string.begin.python
+  "(" : meta.embedded.block.javascript meta.brace.round.js
+  "(" : meta.embedded.block.javascript meta.arrow.js meta.parameters.js punctuation.definition.parameters.begin.js
+  "edge" : meta.embedded.block.javascript meta.arrow.js meta.parameters.js variable.parameter.js
+  ")" : meta.embedded.block.javascript meta.arrow.js meta.parameters.js punctuation.definition.parameters.end.js
+  "=>" : meta.embedded.block.javascript meta.arrow.js storage.type.function.arrow.js
+  "edge" : meta.embedded.block.javascript variable.other.object.js
+  "." : meta.embedded.block.javascript punctuation.accessor.js
+  "id" : meta.embedded.block.javascript variable.other.property.js
+  "!==" : meta.embedded.block.javascript keyword.operator.comparison.js
+  "'" : meta.embedded.block.javascript string.quoted.single.js punctuation.definition.string.begin.js
+  "e1" : meta.embedded.block.javascript string.quoted.single.js
+  "'" : meta.embedded.block.javascript string.quoted.single.js punctuation.definition.string.end.js
+  ")" : meta.embedded.block.javascript meta.brace.round.js
+  "\"" : punctuation.definition.string.end.python
+  ")" : 
+>spread = Var(_js_expr="{...searchBarProps}")
+  "spread" : 
+  "=" : keyword.operator.assignment.python
+  "Var" : meta.function-call.python meta.function-call.generic.python
+  "(" : meta.function-call.python punctuation.definition.arguments.begin.python
+  "_js_expr" : meta.function-call.python meta.function-call.arguments.python
+  "=" : meta.function-call.python meta.function-call.arguments.python keyword.operator.assignment.python
+  "\"" : meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.begin.python
+  "{" : meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript meta.block.js punctuation.definition.block.js
+  "..." : meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript meta.block.js keyword.operator.spread.js
+  "searchBarProps" : meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript meta.block.js variable.other.readwrite.js
+  "}" : meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript meta.block.js punctuation.definition.block.js
+  "\"" : meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.end.python
+  ")" : meta.function-call.python punctuation.definition.arguments.end.python
+>special = Var("{...searchBarProps}")
+  "special" : 
+  "=" : keyword.operator.assignment.python
+  "Var" : meta.function-call.python meta.function-call.generic.python
+  "(" : meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"" : punctuation.definition.string.begin.python
+  "{" : meta.embedded.block.javascript meta.block.js punctuation.definition.block.js
+  "..." : meta.embedded.block.javascript meta.block.js keyword.operator.spread.js
+  "searchBarProps" : meta.embedded.block.javascript meta.block.js variable.other.readwrite.js
+  "}" : meta.embedded.block.javascript meta.block.js punctuation.definition.block.js
+  "\"" : punctuation.definition.string.end.python
+  ")" : 
+>
+>
+>def index():
+  "def" : meta.function.python storage.type.function.python
+  "index" : meta.function.python entity.name.function.python
+  "(" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.begin.python
+  ")" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.end.python
+  ":" : meta.function.python punctuation.section.function.begin.python
+>    return rx.box(
+  "return" : keyword.control.flow.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "box" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+>        rx.script("console.log('inline javascript')"),
+  "rx" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python punctuation.separator.period.python
+  "script" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.begin.python
+  "console" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript meta.function-call.js variable.other.object.js
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript meta.function-call.js punctuation.accessor.js
+  "log" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript meta.function-call.js entity.name.function.js
+  "(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript meta.brace.round.js
+  "'" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript string.quoted.single.js punctuation.definition.string.begin.js
+  "inline javascript" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript string.quoted.single.js
+  "'" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript string.quoted.single.js punctuation.definition.string.end.js
+  ")" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.javascript meta.brace.round.js
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.end.python
+  ")" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+  "," : punctuation.separator.element.python
+>        rx.script("""
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "script" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"\"\"" : punctuation.definition.string.begin.python
+>            var button_sfx = new Audio("/sounds/click.mp3");
+  "var" : meta.embedded.block.javascript meta.var.expr.js storage.type.js
+  "button_sfx" : meta.embedded.block.javascript meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js
+  "=" : meta.embedded.block.javascript meta.var.expr.js keyword.operator.assignment.js
+  "new" : meta.embedded.block.javascript meta.var.expr.js new.expr.js keyword.operator.new.js
+  "Audio" : meta.embedded.block.javascript meta.var.expr.js new.expr.js meta.function-call.js entity.name.function.js
+  "(" : meta.embedded.block.javascript meta.var.expr.js new.expr.js meta.brace.round.js
+  "\"" : meta.embedded.block.javascript meta.var.expr.js new.expr.js string.quoted.double.js punctuation.definition.string.begin.js
+  "/sounds/click.mp3" : meta.embedded.block.javascript meta.var.expr.js new.expr.js string.quoted.double.js
+  "\"" : meta.embedded.block.javascript meta.var.expr.js new.expr.js string.quoted.double.js punctuation.definition.string.end.js
+  ")" : meta.embedded.block.javascript meta.var.expr.js new.expr.js meta.brace.round.js
+  ";" : meta.embedded.block.javascript punctuation.terminator.statement.js
+>            function playFromStart(sfx) {
+  "function" : meta.embedded.block.javascript meta.function.js storage.type.function.js
+  "playFromStart" : meta.embedded.block.javascript meta.function.js meta.definition.function.js entity.name.function.js
+  "(" : meta.embedded.block.javascript meta.function.js meta.parameters.js punctuation.definition.parameters.begin.js
+  "sfx" : meta.embedded.block.javascript meta.function.js meta.parameters.js variable.parameter.js
+  ")" : meta.embedded.block.javascript meta.function.js meta.parameters.js punctuation.definition.parameters.end.js
+  "{" : meta.embedded.block.javascript meta.function.js meta.block.js punctuation.definition.block.js
+>                sfx.currentTime = 0;
+  "sfx" : meta.embedded.block.javascript meta.function.js meta.block.js variable.other.object.js
+  "." : meta.embedded.block.javascript meta.function.js meta.block.js punctuation.accessor.js
+  "currentTime" : meta.embedded.block.javascript meta.function.js meta.block.js variable.other.property.js
+  "=" : meta.embedded.block.javascript meta.function.js meta.block.js keyword.operator.assignment.js
+  "0" : meta.embedded.block.javascript meta.function.js meta.block.js constant.numeric.decimal.js
+  ";" : meta.embedded.block.javascript meta.function.js meta.block.js punctuation.terminator.statement.js
+>                sfx.play();
+  "sfx" : meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js variable.other.object.js
+  "." : meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js punctuation.accessor.js
+  "play" : meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js entity.name.function.js
+  "(" : meta.embedded.block.javascript meta.function.js meta.block.js meta.brace.round.js
+  ")" : meta.embedded.block.javascript meta.function.js meta.block.js meta.brace.round.js
+  ";" : meta.embedded.block.javascript meta.function.js meta.block.js punctuation.terminator.statement.js
+>            }
+  "}" : meta.embedded.block.javascript meta.function.js meta.block.js punctuation.definition.block.js
+>        """),
+  "\"\"\"" : punctuation.definition.string.end.python
+  ")" : 
+  "," : punctuation.separator.element.python
+>    )
+  "    )" : 
+>

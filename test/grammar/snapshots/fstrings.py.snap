@@ -1,0 +1,125 @@
+>import reflex as rx
+  "import" : keyword.control.import.python
+  "reflex" : 
+  "as" : keyword.control.import.python
+  "rx" : 
+>
+>node_id = "e1"
+  "node_id" : 
+  "=" : keyword.operator.assignment.python
+  "\"" : string.quoted.single.python punctuation.definition.string.begin.python
+  "e1" : string.quoted.single.python
+  "\"" : string.quoted.single.python punctuation.definition.string.end.python
+>
+>filter_var = rx.Var(f"((edge) => edge.id !== {node_id})")
+  "filter_var" : 
+  "=" : keyword.operator.assignment.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "Var" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "f" : storage.type.string.python
+  "\"" : punctuation.definition.string.begin.python
+  "(" : meta.embedded.block.javascript.fstring meta.brace.round.js
+  "(" : meta.embedded.block.javascript.fstring meta.arrow.js meta.parameters.js punctuation.definition.parameters.begin.js
+  "edge" : meta.embedded.block.javascript.fstring meta.arrow.js meta.parameters.js variable.parameter.js
+  ")" : meta.embedded.block.javascript.fstring meta.arrow.js meta.parameters.js punctuation.definition.parameters.end.js
+  "=>" : meta.embedded.block.javascript.fstring meta.arrow.js storage.type.function.arrow.js
+  "edge" : meta.embedded.block.javascript.fstring variable.other.object.js
+  "." : meta.embedded.block.javascript.fstring punctuation.accessor.js
+  "id" : meta.embedded.block.javascript.fstring variable.other.property.js
+  "!==" : meta.embedded.block.javascript.fstring keyword.operator.comparison.js
+  "{" : meta.embedded.block.javascript.fstring meta.embedded.python punctuation.definition.template-expression.begin.python
+  "node_id" : meta.embedded.block.javascript.fstring meta.embedded.python
+  "}" : meta.embedded.block.javascript.fstring meta.embedded.python punctuation.definition.template-expression.end.python
+  ")" : meta.embedded.block.javascript.fstring meta.brace.round.js
+  "\"" : punctuation.definition.string.end.python
+  ")" : 
+>
+>script = rx.call_script(
+  "script" : 
+  "=" : keyword.operator.assignment.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "call_script" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+>    f"""
+  "f" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python string.interpolated.python string.quoted.multi.python storage.type.string.python
+  "\"\"\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python punctuation.definition.string.begin.python string.interpolated.python string.quoted.multi.python
+>    const el = document.getElementById({node_id});
+  "    const el = document.getElementById(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python string.interpolated.python string.quoted.multi.python
+  "{" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python constant.character.format.placeholder.other.python
+  "node_id" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python
+  "}" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python constant.character.format.placeholder.other.python
+  ");" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python string.interpolated.python string.quoted.multi.python
+>    el.scrollIntoView({{behavior: "smooth"}});
+  "    el.scrollIntoView(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python string.interpolated.python string.quoted.multi.python
+  "{{" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python constant.character.escape.python
+  "behavior: \"smooth\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python string.interpolated.python string.quoted.multi.python
+  "}}" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python constant.character.escape.python
+  ");" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python string.interpolated.python string.quoted.multi.python
+>    """
+  "\"\"\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.fstring.python punctuation.definition.string.end.python string.interpolated.python string.quoted.multi.python
+>)
+  ")" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+>
+>
+>def index():
+  "def" : meta.function.python storage.type.function.python
+  "index" : meta.function.python entity.name.function.python
+  "(" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.begin.python
+  ")" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.end.python
+  ":" : meta.function.python punctuation.section.function.begin.python
+>    return rx.box(
+  "return" : keyword.control.flow.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "box" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+>        rx.text("x", class_name=f"p-4 text-{node_id} shadow-lg"),
+  "rx" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python punctuation.separator.period.python
+  "text" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.begin.python
+  "x" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+  "class_name" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "=" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python keyword.operator.assignment.python
+  "f" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python storage.type.string.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.begin.python
+  "p-4 text-" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.tailwind-classes.fstring
+  "{" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.tailwind-classes.fstring meta.embedded.python punctuation.definition.template-expression.begin.python
+  "node_id" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.tailwind-classes.fstring meta.embedded.python
+  "}" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.tailwind-classes.fstring meta.embedded.python punctuation.definition.template-expression.end.python
+  " shadow-lg" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.tailwind-classes.fstring
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.end.python
+  ")" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+>        rx.text("y", background_image=f"url({node_id}.png)"),
+  "rx" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python punctuation.separator.period.python
+  "text" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.begin.python
+  "y" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+  "background_image" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python support.type.property-name.css
+  "=" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "f" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python storage.type.string.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.begin.python
+  "url" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css.fstring meta.function.url.css support.function.url.css
+  "(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css.fstring meta.function.url.css punctuation.section.function.begin.bracket.round.css
+  "{" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css.fstring meta.function.url.css meta.embedded.python punctuation.definition.template-expression.begin.python
+  "node_id" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css.fstring meta.function.url.css meta.embedded.python
+  "}" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css.fstring meta.function.url.css meta.embedded.python punctuation.definition.template-expression.end.python
+  ".png" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css.fstring meta.function.url.css variable.parameter.url.css
+  ")" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css.fstring meta.function.url.css punctuation.section.function.end.bracket.round.css
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.end.python
+  ")" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+>    )
+  ")" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+>

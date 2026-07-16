@@ -1,0 +1,88 @@
+>import reflex as rx
+  "import" : keyword.control.import.python
+  "reflex" : 
+  "as" : keyword.control.import.python
+  "rx" : 
+>
+>
+>def index():
+  "def" : meta.function.python storage.type.function.python
+  "index" : meta.function.python entity.name.function.python
+  "(" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.begin.python
+  ")" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.end.python
+  ":" : meta.function.python punctuation.section.function.begin.python
+>    return rx.box(
+  "return" : keyword.control.flow.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "box" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+>        rx.html("<h2>Hello World</h2>"),
+  "rx" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python punctuation.separator.period.python
+  "html" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.begin.python
+  "<" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.html meta.tag.structure.h2.start.html punctuation.definition.tag.begin.html
+  "h2" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.html meta.tag.structure.h2.start.html entity.name.tag.html
+  ">" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.html meta.tag.structure.h2.start.html punctuation.definition.tag.end.html
+  "Hello World" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.html
+  "</" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.html meta.tag.structure.h2.end.html punctuation.definition.tag.begin.html
+  "h2" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.html meta.tag.structure.h2.end.html entity.name.tag.html
+  ">" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.html meta.tag.structure.h2.end.html punctuation.definition.tag.end.html
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.end.python
+  ")" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+  "," : punctuation.separator.element.python
+>        rx.html("""
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "html" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"\"\"" : punctuation.definition.string.begin.python
+>            <div class="card">
+  "<" : meta.embedded.block.html meta.tag.structure.div.start.html punctuation.definition.tag.begin.html
+  "div" : meta.embedded.block.html meta.tag.structure.div.start.html entity.name.tag.html
+  "class" : meta.embedded.block.html meta.tag.structure.div.start.html meta.attribute.class.html entity.other.attribute-name.html
+  "=" : meta.embedded.block.html meta.tag.structure.div.start.html meta.attribute.class.html punctuation.separator.key-value.html
+  "\"" : meta.embedded.block.html meta.tag.structure.div.start.html meta.attribute.class.html string.quoted.double.html punctuation.definition.string.begin.html
+  "card" : meta.embedded.block.html meta.tag.structure.div.start.html meta.attribute.class.html string.quoted.double.html
+  "\"" : meta.embedded.block.html meta.tag.structure.div.start.html meta.attribute.class.html string.quoted.double.html punctuation.definition.string.end.html
+  ">" : meta.embedded.block.html meta.tag.structure.div.start.html punctuation.definition.tag.end.html
+>                <img src="/logo.png" alt="logo" />
+  "<" : meta.embedded.block.html meta.tag.object.img.void.html punctuation.definition.tag.begin.html
+  "img" : meta.embedded.block.html meta.tag.object.img.void.html entity.name.tag.html
+  "src" : meta.embedded.block.html meta.tag.object.img.void.html meta.attribute.src.html entity.other.attribute-name.html
+  "=" : meta.embedded.block.html meta.tag.object.img.void.html meta.attribute.src.html punctuation.separator.key-value.html
+  "\"" : meta.embedded.block.html meta.tag.object.img.void.html meta.attribute.src.html string.quoted.double.html punctuation.definition.string.begin.html
+  "/logo.png" : meta.embedded.block.html meta.tag.object.img.void.html meta.attribute.src.html string.quoted.double.html
+  "\"" : meta.embedded.block.html meta.tag.object.img.void.html meta.attribute.src.html string.quoted.double.html punctuation.definition.string.end.html
+  "alt" : meta.embedded.block.html meta.tag.object.img.void.html meta.attribute.alt.html entity.other.attribute-name.html
+  "=" : meta.embedded.block.html meta.tag.object.img.void.html meta.attribute.alt.html punctuation.separator.key-value.html
+  "\"" : meta.embedded.block.html meta.tag.object.img.void.html meta.attribute.alt.html string.quoted.double.html punctuation.definition.string.begin.html
+  "logo" : meta.embedded.block.html meta.tag.object.img.void.html meta.attribute.alt.html string.quoted.double.html
+  "\"" : meta.embedded.block.html meta.tag.object.img.void.html meta.attribute.alt.html string.quoted.double.html punctuation.definition.string.end.html
+  "/>" : meta.embedded.block.html meta.tag.object.img.void.html punctuation.definition.tag.end.html
+>                <p style="color: red">embedded html</p>
+  "<" : meta.embedded.block.html meta.tag.structure.p.start.html punctuation.definition.tag.begin.html
+  "p" : meta.embedded.block.html meta.tag.structure.p.start.html entity.name.tag.html
+  "style" : meta.embedded.block.html meta.tag.structure.p.start.html meta.attribute.style.html entity.other.attribute-name.html
+  "=" : meta.embedded.block.html meta.tag.structure.p.start.html meta.attribute.style.html punctuation.separator.key-value.html
+  "\"" : meta.embedded.block.html meta.tag.structure.p.start.html meta.attribute.style.html meta.embedded.line.css string.quoted.double.html punctuation.definition.string.begin.html
+  "color: red" : meta.embedded.block.html meta.tag.structure.p.start.html meta.attribute.style.html meta.embedded.line.css string.quoted.double.html source.css
+  "\"" : meta.embedded.block.html meta.tag.structure.p.start.html meta.attribute.style.html meta.embedded.line.css string.quoted.double.html punctuation.definition.string.end.html source.css
+  ">" : meta.embedded.block.html meta.tag.structure.p.start.html punctuation.definition.tag.end.html
+  "embedded html" : meta.embedded.block.html
+  "</" : meta.embedded.block.html meta.tag.structure.p.end.html punctuation.definition.tag.begin.html
+  "p" : meta.embedded.block.html meta.tag.structure.p.end.html entity.name.tag.html
+  ">" : meta.embedded.block.html meta.tag.structure.p.end.html punctuation.definition.tag.end.html
+>            </div>
+  "</" : meta.embedded.block.html meta.tag.structure.div.end.html punctuation.definition.tag.begin.html
+  "div" : meta.embedded.block.html meta.tag.structure.div.end.html entity.name.tag.html
+  ">" : meta.embedded.block.html meta.tag.structure.div.end.html punctuation.definition.tag.end.html
+>        """),
+  "\"\"\"" : punctuation.definition.string.end.python
+  ")" : 
+  "," : punctuation.separator.element.python
+>    )
+  "    )" : 
+>

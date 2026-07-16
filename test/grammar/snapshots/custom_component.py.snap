@@ -1,0 +1,247 @@
+>import reflex as rx
+  "import" : keyword.control.import.python
+  "reflex" : 
+  "as" : keyword.control.import.python
+  "rx" : 
+>
+>
+>class ColorPicker(rx.Component):
+  "class" : meta.class.python storage.type.class.python
+  "ColorPicker" : meta.class.python entity.name.type.class.python
+  "(" : meta.class.python meta.class.inheritance.python punctuation.definition.inheritance.begin.python
+  "rx" : meta.class.python meta.class.inheritance.python entity.other.inherited-class.python
+  "." : meta.class.python meta.class.inheritance.python meta.member.access.python punctuation.separator.period.python
+  "Component" : meta.class.python meta.class.inheritance.python meta.member.access.python entity.other.inherited-class.python
+  ")" : meta.class.python meta.class.inheritance.python punctuation.definition.inheritance.end.python
+  ":" : meta.class.python punctuation.section.class.begin.python
+>    library = "react-colorful"
+  "library" : 
+  "=" : keyword.operator.assignment.python
+  "\"" : string.quoted.single.python punctuation.definition.string.begin.python
+  "react-colorful" : string.quoted.single.python
+  "\"" : string.quoted.single.python punctuation.definition.string.end.python
+>    tag = "HexColorPicker"
+  "tag" : 
+  "=" : keyword.operator.assignment.python
+  "\"" : string.quoted.single.python punctuation.definition.string.begin.python
+  "HexColorPicker" : string.quoted.single.python
+  "\"" : string.quoted.single.python punctuation.definition.string.end.python
+>
+>    def add_hooks(self) -> list[str]:
+  "def" : meta.function.reflex-custom-code.python storage.type.function.python
+  "add_hooks" : meta.function.reflex-custom-code.python entity.name.function.python
+  "(" : meta.function.reflex-custom-code.python punctuation.parenthesis.begin.python
+  "self" : meta.function.reflex-custom-code.python variable.language.special.self.python
+  ")" : meta.function.reflex-custom-code.python punctuation.parenthesis.end.python
+  "->" : meta.function.reflex-custom-code.python invalid.illegal.annotation.python
+  "list" : meta.function.reflex-custom-code.python meta.item-access.python meta.indexed-name.python
+  "[" : meta.function.reflex-custom-code.python meta.item-access.python punctuation.definition.arguments.begin.python
+  "str" : meta.function.reflex-custom-code.python meta.item-access.python meta.item-access.arguments.python support.type.python
+  "]" : meta.function.reflex-custom-code.python meta.item-access.python punctuation.definition.arguments.end.python
+  ":" : meta.function.reflex-custom-code.python punctuation.separator.colon.python
+>        """Add the hooks for the component."""
+  "\"\"\"" : meta.function.reflex-custom-code.python punctuation.definition.string.begin.python
+  "Add" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact variable.other.readwrite.js.jsx
+  "the" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact variable.other.readwrite.js.jsx
+  "hooks" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact variable.other.readwrite.js.jsx
+  "for" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact variable.other.readwrite.js.jsx
+  "the" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact variable.other.readwrite.js.jsx
+  "component" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact variable.other.readwrite.js.jsx
+  "." : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact punctuation.accessor.js.jsx
+  "\"\"\"" : meta.function.reflex-custom-code.python punctuation.definition.string.end.python
+>        return [
+  "return" : meta.function.reflex-custom-code.python keyword.control.flow.python
+  "[" : meta.function.reflex-custom-code.python punctuation.definition.list.begin.python
+>            """
+  "\"\"\"" : meta.function.reflex-custom-code.python punctuation.definition.string.begin.python
+>            useEffect(() => {
+  "useEffect" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.function-call.js.jsx entity.name.function.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.brace.round.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.parameters.js.jsx punctuation.definition.parameters.begin.js.jsx
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.parameters.js.jsx punctuation.definition.parameters.end.js.jsx
+  "=>" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx storage.type.function.arrow.js.jsx
+  "{" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx punctuation.definition.block.js.jsx
+>                const handler = (e) => console.log(e.key);
+  "const" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx storage.type.js.jsx
+  "handler" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.var-single-variable.expr.js.jsx meta.definition.variable.js.jsx variable.other.constant.js.jsx entity.name.function.js.jsx
+  "=" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx keyword.operator.assignment.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.arrow.js.jsx meta.parameters.js.jsx punctuation.definition.parameters.begin.js.jsx
+  "e" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.arrow.js.jsx meta.parameters.js.jsx variable.parameter.js.jsx
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.arrow.js.jsx meta.parameters.js.jsx punctuation.definition.parameters.end.js.jsx
+  "=>" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.arrow.js.jsx storage.type.function.arrow.js.jsx
+  "console" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.function-call.js.jsx variable.other.object.js.jsx
+  "." : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.function-call.js.jsx punctuation.accessor.js.jsx
+  "log" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.function-call.js.jsx entity.name.function.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.brace.round.js.jsx
+  "e" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx variable.other.object.js.jsx
+  "." : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx punctuation.accessor.js.jsx
+  "key" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx variable.other.property.js.jsx
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.brace.round.js.jsx
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx punctuation.terminator.statement.js.jsx
+>                document.addEventListener("keydown", handler);
+  "document" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.function-call.js.jsx variable.other.object.js.jsx
+  "." : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.function-call.js.jsx punctuation.accessor.js.jsx
+  "addEventListener" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.function-call.js.jsx entity.name.function.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.brace.round.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx string.quoted.double.js.jsx punctuation.definition.string.begin.js.jsx
+  "keydown" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx string.quoted.double.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx string.quoted.double.js.jsx punctuation.definition.string.end.js.jsx
+  "," : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx punctuation.separator.comma.js.jsx
+  "handler" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx variable.other.readwrite.js.jsx
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.brace.round.js.jsx
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx punctuation.terminator.statement.js.jsx
+>                return () => document.removeEventListener("keydown", handler);
+  "return" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx keyword.control.flow.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.arrow.js.jsx meta.parameters.js.jsx punctuation.definition.parameters.begin.js.jsx
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.arrow.js.jsx meta.parameters.js.jsx punctuation.definition.parameters.end.js.jsx
+  "=>" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.arrow.js.jsx storage.type.function.arrow.js.jsx
+  "document" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.function-call.js.jsx variable.other.object.js.jsx
+  "." : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.function-call.js.jsx punctuation.accessor.js.jsx
+  "removeEventListener" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.function-call.js.jsx entity.name.function.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.brace.round.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx string.quoted.double.js.jsx punctuation.definition.string.begin.js.jsx
+  "keydown" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx string.quoted.double.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx string.quoted.double.js.jsx punctuation.definition.string.end.js.jsx
+  "," : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx punctuation.separator.comma.js.jsx
+  "handler" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx variable.other.readwrite.js.jsx
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx meta.brace.round.js.jsx
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx punctuation.terminator.statement.js.jsx
+>            }, [])
+  "}" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.arrow.js.jsx meta.block.js.jsx punctuation.definition.block.js.jsx
+  "," : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact punctuation.separator.comma.js.jsx
+  "[" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.array.literal.js.jsx meta.brace.square.js.jsx
+  "]" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.array.literal.js.jsx meta.brace.square.js.jsx
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.brace.round.js.jsx
+>            """,
+  "\"\"\"" : meta.function.reflex-custom-code.python punctuation.definition.string.end.python
+  "," : meta.function.reflex-custom-code.python punctuation.separator.element.python
+>            'const customHookVariable = "some value";',
+  "'" : meta.function.reflex-custom-code.python punctuation.definition.string.begin.python
+  "const" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx storage.type.js.jsx
+  "customHookVariable" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.var-single-variable.expr.js.jsx meta.definition.variable.js.jsx variable.other.constant.js.jsx
+  "=" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx keyword.operator.assignment.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx string.quoted.double.js.jsx punctuation.definition.string.begin.js.jsx
+  "some value" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx string.quoted.double.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx string.quoted.double.js.jsx punctuation.definition.string.end.js.jsx
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact punctuation.terminator.statement.js.jsx
+  "'" : meta.function.reflex-custom-code.python punctuation.definition.string.end.python
+  "," : meta.function.reflex-custom-code.python punctuation.separator.element.python
+>        ]
+  "]" : meta.function.reflex-custom-code.python punctuation.definition.list.end.python
+>
+>    def add_custom_code(self) -> list[str]:
+  "def" : meta.function.reflex-custom-code.python storage.type.function.python
+  "add_custom_code" : meta.function.reflex-custom-code.python entity.name.function.python
+  "(" : meta.function.reflex-custom-code.python punctuation.parenthesis.begin.python
+  "self" : meta.function.reflex-custom-code.python variable.language.special.self.python
+  ")" : meta.function.reflex-custom-code.python punctuation.parenthesis.end.python
+  "->" : meta.function.reflex-custom-code.python invalid.illegal.annotation.python
+  "list" : meta.function.reflex-custom-code.python meta.item-access.python meta.indexed-name.python
+  "[" : meta.function.reflex-custom-code.python meta.item-access.python punctuation.definition.arguments.begin.python
+  "str" : meta.function.reflex-custom-code.python meta.item-access.python meta.item-access.arguments.python support.type.python
+  "]" : meta.function.reflex-custom-code.python meta.item-access.python punctuation.definition.arguments.end.python
+  ":" : meta.function.reflex-custom-code.python punctuation.separator.colon.python
+>        return [
+  "return" : meta.function.reflex-custom-code.python keyword.control.flow.python
+  "[" : meta.function.reflex-custom-code.python punctuation.definition.list.begin.python
+>            """
+  "\"\"\"" : meta.function.reflex-custom-code.python punctuation.definition.string.begin.python
+>            const ChartExample = () => {
+  "const" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx storage.type.js.jsx
+  "ChartExample" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.var-single-variable.expr.js.jsx meta.definition.variable.js.jsx variable.other.constant.js.jsx entity.name.function.js.jsx
+  "=" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx keyword.operator.assignment.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.parameters.js.jsx punctuation.definition.parameters.begin.js.jsx
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.parameters.js.jsx punctuation.definition.parameters.end.js.jsx
+  "=>" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx storage.type.function.arrow.js.jsx
+  "{" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx punctuation.definition.block.js.jsx
+>                const [data, setData] = useState([1, 2, 3]);
+  "const" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx storage.type.js.jsx
+  "[" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array-binding-pattern-variable.js.jsx punctuation.definition.binding-pattern.array.js.jsx
+  "data" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array-binding-pattern-variable.js.jsx meta.definition.variable.js.jsx variable.other.constant.js.jsx
+  "," : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array-binding-pattern-variable.js.jsx punctuation.separator.comma.js.jsx
+  "setData" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array-binding-pattern-variable.js.jsx meta.definition.variable.js.jsx variable.other.constant.js.jsx
+  "]" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array-binding-pattern-variable.js.jsx punctuation.definition.binding-pattern.array.js.jsx
+  "=" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx keyword.operator.assignment.js.jsx
+  "useState" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.function-call.js.jsx entity.name.function.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.brace.round.js.jsx
+  "[" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array.literal.js.jsx meta.brace.square.js.jsx
+  "1" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array.literal.js.jsx constant.numeric.decimal.js.jsx
+  "," : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array.literal.js.jsx punctuation.separator.comma.js.jsx
+  "2" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array.literal.js.jsx constant.numeric.decimal.js.jsx
+  "," : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array.literal.js.jsx punctuation.separator.comma.js.jsx
+  "3" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array.literal.js.jsx constant.numeric.decimal.js.jsx
+  "]" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.array.literal.js.jsx meta.brace.square.js.jsx
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.var.expr.js.jsx meta.brace.round.js.jsx
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx punctuation.terminator.statement.js.jsx
+>                return (
+  "return" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx keyword.control.flow.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.brace.round.js.jsx
+>                    <div className="chart">
+  "<" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx punctuation.definition.tag.begin.js.jsx
+  "div" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx entity.name.tag.js.jsx
+  "className" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.tag.attributes.js.jsx entity.other.attribute-name.js.jsx
+  "=" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.tag.attributes.js.jsx keyword.operator.assignment.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.tag.attributes.js.jsx string.quoted.double.js.jsx punctuation.definition.string.begin.js.jsx
+  "chart" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.tag.attributes.js.jsx string.quoted.double.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.tag.attributes.js.jsx string.quoted.double.js.jsx punctuation.definition.string.end.js.jsx
+  ">" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx punctuation.definition.tag.end.js.jsx
+>                        {data.map((d) => <span key={d}>{d}</span>)}
+  "{" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx punctuation.section.embedded.begin.js.jsx
+  "data" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.function-call.js.jsx variable.other.object.js.jsx
+  "." : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.function-call.js.jsx punctuation.accessor.js.jsx
+  "map" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.function-call.js.jsx entity.name.function.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.brace.round.js.jsx
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.parameters.js.jsx punctuation.definition.parameters.begin.js.jsx
+  "d" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.parameters.js.jsx variable.parameter.js.jsx
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.parameters.js.jsx punctuation.definition.parameters.end.js.jsx
+  "=>" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx storage.type.function.arrow.js.jsx
+  "<" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx punctuation.definition.tag.begin.js.jsx
+  "span" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx entity.name.tag.js.jsx
+  "key" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx meta.tag.attributes.js.jsx entity.other.attribute-name.js.jsx
+  "=" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx meta.tag.attributes.js.jsx keyword.operator.assignment.js.jsx
+  "{" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx meta.tag.attributes.js.jsx punctuation.section.embedded.begin.js.jsx
+  "d" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx meta.tag.attributes.js.jsx meta.embedded.expression.js.jsx variable.other.readwrite.js.jsx
+  "}" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx meta.tag.attributes.js.jsx punctuation.section.embedded.end.js.jsx
+  ">" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx punctuation.definition.tag.end.js.jsx
+  "{" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx punctuation.section.embedded.begin.js.jsx
+  "d" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx variable.other.readwrite.js.jsx
+  "}" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx punctuation.section.embedded.end.js.jsx
+  "</" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx punctuation.definition.tag.begin.js.jsx
+  "span" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx entity.name.tag.js.jsx
+  ">" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.arrow.js.jsx meta.tag.js.jsx punctuation.definition.tag.end.js.jsx
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx meta.embedded.expression.js.jsx meta.brace.round.js.jsx
+  "}" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx meta.jsx.children.js.jsx punctuation.section.embedded.end.js.jsx
+>                    </div>
+  "</" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx punctuation.definition.tag.begin.js.jsx
+  "div" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx entity.name.tag.js.jsx
+  ">" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.tag.js.jsx punctuation.definition.tag.end.js.jsx
+>                );
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx meta.brace.round.js.jsx
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx punctuation.terminator.statement.js.jsx
+>            };
+  "}" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.arrow.js.jsx meta.block.js.jsx punctuation.definition.block.js.jsx
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact punctuation.terminator.statement.js.jsx
+>            """
+  "\"\"\"" : meta.function.reflex-custom-code.python punctuation.definition.string.end.python
+>        ]
+  "]" : meta.function.reflex-custom-code.python punctuation.definition.list.end.python
+>
+>    def _get_custom_code(self) -> str:
+  "def" : meta.function.reflex-custom-code.python storage.type.function.python
+  "_get_custom_code" : meta.function.reflex-custom-code.python entity.name.function.python
+  "(" : meta.function.reflex-custom-code.python punctuation.parenthesis.begin.python
+  "self" : meta.function.reflex-custom-code.python variable.language.special.self.python
+  ")" : meta.function.reflex-custom-code.python punctuation.parenthesis.end.python
+  "->" : meta.function.reflex-custom-code.python invalid.illegal.annotation.python
+  "str" : meta.function.reflex-custom-code.python support.type.python
+  ":" : meta.function.reflex-custom-code.python punctuation.separator.colon.python
+>        return "import 'reactflow/dist/style.css';"
+  "return" : meta.function.reflex-custom-code.python keyword.control.flow.python
+  "\"" : meta.function.reflex-custom-code.python punctuation.definition.string.begin.python
+  "import" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.import.js.jsx keyword.control.import.js.jsx
+  "'" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.import.js.jsx string.quoted.single.js.jsx punctuation.definition.string.begin.js.jsx
+  "reactflow/dist/style.css" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.import.js.jsx string.quoted.single.js.jsx
+  "'" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.import.js.jsx string.quoted.single.js.jsx punctuation.definition.string.end.js.jsx
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact punctuation.terminator.statement.js.jsx
+  "\"" : meta.function.reflex-custom-code.python punctuation.definition.string.end.python
+>

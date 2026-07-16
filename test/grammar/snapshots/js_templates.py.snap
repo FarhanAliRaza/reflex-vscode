@@ -1,0 +1,174 @@
+>import reflex as rx
+  "import" : keyword.control.import.python
+  "reflex" : 
+  "as" : keyword.control.import.python
+  "rx" : 
+>
+>
+>class Themed(rx.Component):
+  "class" : meta.class.python storage.type.class.python
+  "Themed" : meta.class.python entity.name.type.class.python
+  "(" : meta.class.python meta.class.inheritance.python punctuation.definition.inheritance.begin.python
+  "rx" : meta.class.python meta.class.inheritance.python entity.other.inherited-class.python
+  "." : meta.class.python meta.class.inheritance.python meta.member.access.python punctuation.separator.period.python
+  "Component" : meta.class.python meta.class.inheritance.python meta.member.access.python entity.other.inherited-class.python
+  ")" : meta.class.python meta.class.inheritance.python punctuation.definition.inheritance.end.python
+  ":" : meta.class.python punctuation.section.class.begin.python
+>    def add_hooks(self) -> list[str]:
+  "def" : meta.function.reflex-custom-code.python storage.type.function.python
+  "add_hooks" : meta.function.reflex-custom-code.python entity.name.function.python
+  "(" : meta.function.reflex-custom-code.python punctuation.parenthesis.begin.python
+  "self" : meta.function.reflex-custom-code.python variable.language.special.self.python
+  ")" : meta.function.reflex-custom-code.python punctuation.parenthesis.end.python
+  "->" : meta.function.reflex-custom-code.python invalid.illegal.annotation.python
+  "list" : meta.function.reflex-custom-code.python meta.item-access.python meta.indexed-name.python
+  "[" : meta.function.reflex-custom-code.python meta.item-access.python punctuation.definition.arguments.begin.python
+  "str" : meta.function.reflex-custom-code.python meta.item-access.python meta.item-access.arguments.python support.type.python
+  "]" : meta.function.reflex-custom-code.python meta.item-access.python punctuation.definition.arguments.end.python
+  ":" : meta.function.reflex-custom-code.python punctuation.separator.colon.python
+>        return [
+  "return" : meta.function.reflex-custom-code.python keyword.control.flow.python
+  "[" : meta.function.reflex-custom-code.python punctuation.definition.list.begin.python
+>            """
+  "\"\"\"" : meta.function.reflex-custom-code.python punctuation.definition.string.begin.python
+>            const searchBarProps = {
+  "const" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx storage.type.js.jsx
+  "searchBarProps" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.var-single-variable.expr.js.jsx meta.definition.variable.js.jsx variable.other.constant.js.jsx
+  "=" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx keyword.operator.assignment.js.jsx
+  "{" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx punctuation.definition.block.js.jsx
+>              styles: [
+  "styles" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.object-literal.key.js.jsx
+  ":" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.object-literal.key.js.jsx punctuation.separator.key-value.js.jsx
+  "[" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.brace.square.js.jsx
+>                {
+  "{" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx punctuation.definition.block.js.jsx
+>                  key: "custom-theme",
+  "key" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.object-literal.key.js.jsx
+  ":" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.object-literal.key.js.jsx punctuation.separator.key-value.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx string.quoted.double.js.jsx punctuation.definition.string.begin.js.jsx
+  "custom-theme" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx string.quoted.double.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx string.quoted.double.js.jsx punctuation.definition.string.end.js.jsx
+  "," : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx punctuation.separator.comma.js.jsx
+>                  type: "style",
+  "type" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.object-literal.key.js.jsx
+  ":" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.object-literal.key.js.jsx punctuation.separator.key-value.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx string.quoted.double.js.jsx punctuation.definition.string.begin.js.jsx
+  "style" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx string.quoted.double.js.jsx
+  "\"" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx string.quoted.double.js.jsx punctuation.definition.string.end.js.jsx
+  "," : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx punctuation.separator.comma.js.jsx
+>                  value: /* css */ `
+  "value" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.object-literal.key.js.jsx
+  ":" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.object-literal.key.js.jsx punctuation.separator.key-value.js.jsx
+  "/* css */" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx comment.block.js
+  "`" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx punctuation.definition.string.template.begin.js
+>                    [data-theme='light'] .ikp-search-bar__button {
+  "[" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+  "data-theme" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+  "=" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+  "'" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.selector.css meta.attribute-selector.css string.quoted.single.css punctuation.definition.string.begin.css
+  "light" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.selector.css meta.attribute-selector.css string.quoted.single.css
+  "'" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.selector.css meta.attribute-selector.css string.quoted.single.css punctuation.definition.string.end.css
+  "]" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+  "." : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.selector.css entity.other.attribute-name.class.css punctuation.definition.entity.css
+  "ikp-search-bar__button" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.selector.css entity.other.attribute-name.class.css
+  "{" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+>                      color: var(--secondary-11);
+  "color" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-name.css support.type.property-name.css
+  ":" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css punctuation.separator.key-value.css
+  "var" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-value.css meta.function.variable.css support.function.misc.css
+  "(" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-value.css meta.function.variable.css punctuation.section.function.begin.bracket.round.css
+  "--secondary-11" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-value.css meta.function.variable.css variable.argument.css
+  ")" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-value.css meta.function.variable.css punctuation.section.function.end.bracket.round.css
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css punctuation.terminator.rule.css
+>                      padding: 0.375rem 0.5rem;
+  "padding" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-name.css support.type.property-name.css
+  ":" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css punctuation.separator.key-value.css
+  "0.375" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-value.css constant.numeric.css
+  "rem" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-value.css constant.numeric.css keyword.other.unit.rem.css
+  "0.5" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-value.css constant.numeric.css
+  "rem" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-value.css constant.numeric.css keyword.other.unit.rem.css
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css punctuation.terminator.rule.css
+>                      border-radius: 0.5rem;
+  "border-radius" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-name.css support.type.property-name.css
+  ":" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css punctuation.separator.key-value.css
+  "0.5" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-value.css constant.numeric.css
+  "rem" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-value.css constant.numeric.css keyword.other.unit.rem.css
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css punctuation.terminator.rule.css
+>                      background: ${bg};
+  "background" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-name.css support.type.property-name.css
+  ":" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css punctuation.separator.key-value.css
+  "${bg" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css meta.property-value.css
+  "}" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css
+>                    }
+  "                    }" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.embedded.block.css
+>                  `,
+  "`" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx punctuation.definition.string.template.end.js
+  "," : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx punctuation.separator.comma.js.jsx
+>                },
+  "}" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.objectliteral.js.jsx punctuation.definition.block.js.jsx
+  "," : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx punctuation.separator.comma.js.jsx
+>              ],
+  "]" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx meta.object.member.js.jsx meta.array.literal.js.jsx meta.brace.square.js.jsx
+  "," : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx punctuation.separator.comma.js.jsx
+>            };
+  "}" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact meta.var.expr.js.jsx meta.objectliteral.js.jsx punctuation.definition.block.js.jsx
+  ";" : meta.function.reflex-custom-code.python meta.embedded.block.javascriptreact punctuation.terminator.statement.js.jsx
+>            """
+  "\"\"\"" : meta.function.reflex-custom-code.python punctuation.definition.string.end.python
+>        ]
+  "]" : meta.function.reflex-custom-code.python punctuation.definition.list.end.python
+>
+>
+>snippet = rx.call_script("""
+  "snippet" : 
+  "=" : keyword.operator.assignment.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "call_script" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"\"\"" : punctuation.definition.string.begin.python
+>    const tpl = /* html */ `<div class="card"><p>hello</p></div>`;
+  "const" : meta.embedded.block.javascript meta.var.expr.js storage.type.js
+  "tpl" : meta.embedded.block.javascript meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.constant.js
+  "=" : meta.embedded.block.javascript meta.var.expr.js keyword.operator.assignment.js
+  "/* html */" : meta.embedded.block.javascript meta.var.expr.js comment.block.js
+  "`" : meta.embedded.block.javascript meta.var.expr.js punctuation.definition.string.template.begin.js
+  "<" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.div.start.html punctuation.definition.tag.begin.html
+  "div" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.div.start.html entity.name.tag.html
+  "class" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.div.start.html meta.attribute.class.html entity.other.attribute-name.html
+  "=" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.div.start.html meta.attribute.class.html punctuation.separator.key-value.html
+  "\"" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.div.start.html meta.attribute.class.html string.quoted.double.html punctuation.definition.string.begin.html
+  "card" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.div.start.html meta.attribute.class.html string.quoted.double.html
+  "\"" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.div.start.html meta.attribute.class.html string.quoted.double.html punctuation.definition.string.end.html
+  ">" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.div.start.html punctuation.definition.tag.end.html
+  "<" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.p.start.html punctuation.definition.tag.begin.html
+  "p" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.p.start.html entity.name.tag.html
+  ">" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.p.start.html punctuation.definition.tag.end.html
+  "hello" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html
+  "</" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.p.end.html punctuation.definition.tag.begin.html
+  "p" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.p.end.html entity.name.tag.html
+  ">" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.p.end.html punctuation.definition.tag.end.html
+  "</" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.div.end.html punctuation.definition.tag.begin.html
+  "div" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.div.end.html entity.name.tag.html
+  ">" : meta.embedded.block.javascript meta.var.expr.js meta.embedded.block.html meta.tag.structure.div.end.html punctuation.definition.tag.end.html
+  "`" : meta.embedded.block.javascript meta.var.expr.js punctuation.definition.string.template.end.js
+  ";" : meta.embedded.block.javascript punctuation.terminator.statement.js
+>    document.body.insertAdjacentHTML("beforeend", tpl);
+  "document" : meta.embedded.block.javascript meta.function-call.js variable.other.object.js
+  "." : meta.embedded.block.javascript meta.function-call.js punctuation.accessor.js
+  "body" : meta.embedded.block.javascript meta.function-call.js variable.other.object.property.js
+  "." : meta.embedded.block.javascript meta.function-call.js punctuation.accessor.js
+  "insertAdjacentHTML" : meta.embedded.block.javascript meta.function-call.js entity.name.function.js
+  "(" : meta.embedded.block.javascript meta.brace.round.js
+  "\"" : meta.embedded.block.javascript string.quoted.double.js punctuation.definition.string.begin.js
+  "beforeend" : meta.embedded.block.javascript string.quoted.double.js
+  "\"" : meta.embedded.block.javascript string.quoted.double.js punctuation.definition.string.end.js
+  "," : meta.embedded.block.javascript punctuation.separator.comma.js
+  "tpl" : meta.embedded.block.javascript variable.other.readwrite.js
+  ")" : meta.embedded.block.javascript meta.brace.round.js
+  ";" : meta.embedded.block.javascript punctuation.terminator.statement.js
+>""")
+  "\"\"\"" : punctuation.definition.string.end.python
+  ")" : 
+>

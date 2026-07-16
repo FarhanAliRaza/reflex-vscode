@@ -1,0 +1,153 @@
+{
+  "name": "reflex-vscode",
+  "displayName": "Reflex Embedded Languages",
+  "description": "Syntax highlighting and completions for CSS/JS/JSX/Tailwind strings embedded in Reflex (Python) code",
+  "version": "0.1.5",
+  "publisher": "reflex-dev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FarhanAliRaza/reflex-vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FarhanAliRaza/reflex-vscode/issues"
+  },
+  "homepage": "https://github.com/FarhanAliRaza/reflex-vscode#readme",
+  "keywords": [
+    "reflex",
+    "python",
+    "tailwind",
+    "css",
+    "embedded languages",
+    "syntax highlighting"
+  ],
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "semanticTokenScopes": [
+      {
+        "language": "python",
+        "scopes": {
+          "string": [
+            "unstyled.reflex-embedded"
+          ]
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "path": "./syntaxes/reflex.injection.tmLanguage.json",
+        "scopeName": "reflex.injection",
+        "injectTo": [
+          "source.python"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.javascript": "javascript",
+          "meta.embedded.block.javascriptreact": "javascriptreact",
+          "meta.embedded.block.typescript": "typescript",
+          "meta.embedded.block.css": "css",
+          "meta.embedded.inline.css": "css",
+          "meta.embedded.block.html": "html",
+          "meta.embedded.python": "python"
+        }
+      },
+      {
+        "path": "./syntaxes/reflex-fstring.injection.tmLanguage.json",
+        "scopeName": "reflex-fstring.injection",
+        "injectTo": [
+          "source.python"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.python": "python"
+        }
+      },
+      {
+        "path": "./syntaxes/reflex-methodbody.injection.tmLanguage.json",
+        "scopeName": "reflex-methodbody.injection",
+        "injectTo": [
+          "source.python"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.javascriptreact": "javascriptreact"
+        }
+      },
+      {
+        "path": "./syntaxes/reflex-jstemplate.injection.tmLanguage.json",
+        "scopeName": "reflex-jstemplate.injection",
+        "injectTo": [
+          "source.python"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.css": "css",
+          "meta.embedded.block.html": "html"
+        }
+      }
+    ],
+    "configurationDefaults": {
+      "tailwindCSS.includeLanguages": {
+        "python": "html"
+      },
+      "tailwindCSS.classAttributes": [
+        "class",
+        "className",
+        "class_name"
+      ],
+      "tailwindCSS.experimental.classRegex": [
+        [
+          "class_name\\s*=\\s*\\[([^\\]]*)\\]",
+          "[\"']([^\"']*)[\"']"
+        ],
+        [
+          "class_name\\s*=\\s*f?[\"']([^\"']*)[\"']"
+        ]
+      ]
+    },
+    "commands": [
+      {
+        "command": "reflex.showEmbeddedRegions",
+        "title": "Reflex: Show Embedded Regions in Active File"
+      }
+    ],
+    "configuration": {
+      "title": "Reflex Embedded Languages",
+      "properties": {
+        "reflex.embedded.enableCompletions": {
+          "type": "boolean",
+          "default": true,
+          "description": "Provide completions inside embedded CSS/JS/HTML strings in Reflex Python code."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "gen": "node scripts/gen-css-props.mjs && python3 syntaxes/generate.py",
+    "build": "node esbuild.mjs",
+    "watch": "node esbuild.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:grammar": "node test/grammar/snap.mjs",
+    "test:grammar:update": "node test/grammar/snap.mjs --update",
+    "package": "pnpm dlx @vscode/vsce package --no-dependencies"
+  },
+  "dependencies": {
+    "vscode-css-languageservice": "^6.3.0",
+    "vscode-languageserver-textdocument": "^1.0.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/vscode": "^1.90.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0",
+    "vscode-oniguruma": "^2.0.1",
+    "vscode-textmate": "^9.1.0"
+  }
+}

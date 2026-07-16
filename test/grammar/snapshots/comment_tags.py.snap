@@ -1,0 +1,164 @@
+># language=js
+  "# language=js" : comment.line.number-sign.python
+>ON_LOAD = """
+  "ON_LOAD" : constant.other.caps.python
+  "=" : keyword.operator.assignment.python
+  "\"\"\"" : punctuation.definition.string.begin.python
+>window.addEventListener("load", () => {
+  "window" : meta.embedded.block.javascript meta.function-call.js variable.other.object.js
+  "." : meta.embedded.block.javascript meta.function-call.js punctuation.accessor.js
+  "addEventListener" : meta.embedded.block.javascript meta.function-call.js entity.name.function.js
+  "(" : meta.embedded.block.javascript meta.brace.round.js
+  "\"" : meta.embedded.block.javascript string.quoted.double.js punctuation.definition.string.begin.js
+  "load" : meta.embedded.block.javascript string.quoted.double.js
+  "\"" : meta.embedded.block.javascript string.quoted.double.js punctuation.definition.string.end.js
+  "," : meta.embedded.block.javascript punctuation.separator.comma.js
+  "(" : meta.embedded.block.javascript meta.arrow.js meta.parameters.js punctuation.definition.parameters.begin.js
+  ")" : meta.embedded.block.javascript meta.arrow.js meta.parameters.js punctuation.definition.parameters.end.js
+  "=>" : meta.embedded.block.javascript meta.arrow.js storage.type.function.arrow.js
+  "{" : meta.embedded.block.javascript meta.arrow.js meta.block.js punctuation.definition.block.js
+>    console.log("loaded");
+  "console" : meta.embedded.block.javascript meta.arrow.js meta.block.js meta.function-call.js variable.other.object.js
+  "." : meta.embedded.block.javascript meta.arrow.js meta.block.js meta.function-call.js punctuation.accessor.js
+  "log" : meta.embedded.block.javascript meta.arrow.js meta.block.js meta.function-call.js entity.name.function.js
+  "(" : meta.embedded.block.javascript meta.arrow.js meta.block.js meta.brace.round.js
+  "\"" : meta.embedded.block.javascript meta.arrow.js meta.block.js string.quoted.double.js punctuation.definition.string.begin.js
+  "loaded" : meta.embedded.block.javascript meta.arrow.js meta.block.js string.quoted.double.js
+  "\"" : meta.embedded.block.javascript meta.arrow.js meta.block.js string.quoted.double.js punctuation.definition.string.end.js
+  ")" : meta.embedded.block.javascript meta.arrow.js meta.block.js meta.brace.round.js
+  ";" : meta.embedded.block.javascript meta.arrow.js meta.block.js punctuation.terminator.statement.js
+>});
+  "}" : meta.embedded.block.javascript meta.arrow.js meta.block.js punctuation.definition.block.js
+  ")" : meta.embedded.block.javascript meta.brace.round.js
+  ";" : meta.embedded.block.javascript punctuation.terminator.statement.js
+>"""
+  "\"\"\"" : punctuation.definition.string.end.python
+>
+># js
+  "# js" : comment.line.number-sign.python
+>SNIPPET = "document.querySelector('#app')"
+  "SNIPPET" : constant.other.caps.python
+  "=" : keyword.operator.assignment.python
+  "\"" : punctuation.definition.string.begin.python
+  "document" : meta.embedded.block.javascript meta.function-call.js variable.other.object.js
+  "." : meta.embedded.block.javascript meta.function-call.js punctuation.accessor.js
+  "querySelector" : meta.embedded.block.javascript meta.function-call.js entity.name.function.js
+  "(" : meta.embedded.block.javascript meta.brace.round.js
+  "'" : meta.embedded.block.javascript string.quoted.single.js punctuation.definition.string.begin.js
+  "#app" : meta.embedded.block.javascript string.quoted.single.js
+  "'" : meta.embedded.block.javascript string.quoted.single.js punctuation.definition.string.end.js
+  ")" : meta.embedded.block.javascript meta.brace.round.js
+  "\"" : punctuation.definition.string.end.python
+>
+># language=css
+  "# language=css" : comment.line.number-sign.python
+>THEME_CSS = """
+  "THEME_CSS" : constant.other.caps.python
+  "=" : keyword.operator.assignment.python
+  "\"\"\"" : punctuation.definition.string.begin.python
+>:root {
+  ":" : meta.embedded.block.css meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+  "root" : meta.embedded.block.css meta.selector.css entity.other.attribute-name.pseudo-class.css
+  "{" : meta.embedded.block.css meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+>    --accent: #756aee;
+  "--accent" : meta.embedded.block.css meta.property-list.css variable.css
+  ":" : meta.embedded.block.css meta.property-list.css punctuation.separator.key-value.css
+  "#" : meta.embedded.block.css meta.property-list.css meta.property-value.css constant.other.color.rgb-value.hex.css punctuation.definition.constant.css
+  "756aee" : meta.embedded.block.css meta.property-list.css meta.property-value.css constant.other.color.rgb-value.hex.css
+  ";" : meta.embedded.block.css meta.property-list.css punctuation.terminator.rule.css
+>}
+  "}" : meta.embedded.block.css meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+>.button:hover { background: var(--accent); }
+  "." : meta.embedded.block.css meta.selector.css entity.other.attribute-name.class.css punctuation.definition.entity.css
+  "button" : meta.embedded.block.css meta.selector.css entity.other.attribute-name.class.css
+  ":" : meta.embedded.block.css meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+  "hover" : meta.embedded.block.css meta.selector.css entity.other.attribute-name.pseudo-class.css
+  "{" : meta.embedded.block.css meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+  "background" : meta.embedded.block.css meta.property-list.css meta.property-name.css support.type.property-name.css
+  ":" : meta.embedded.block.css meta.property-list.css punctuation.separator.key-value.css
+  "var" : meta.embedded.block.css meta.property-list.css meta.property-value.css meta.function.variable.css support.function.misc.css
+  "(" : meta.embedded.block.css meta.property-list.css meta.property-value.css meta.function.variable.css punctuation.section.function.begin.bracket.round.css
+  "--accent" : meta.embedded.block.css meta.property-list.css meta.property-value.css meta.function.variable.css variable.argument.css
+  ")" : meta.embedded.block.css meta.property-list.css meta.property-value.css meta.function.variable.css punctuation.section.function.end.bracket.round.css
+  ";" : meta.embedded.block.css meta.property-list.css punctuation.terminator.rule.css
+  "}" : meta.embedded.block.css meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+>"""
+  "\"\"\"" : punctuation.definition.string.end.python
+>
+>INLINE_TAGGED = """#js
+  "INLINE_TAGGED" : constant.other.caps.python
+  "=" : keyword.operator.assignment.python
+  "\"\"\"" : punctuation.definition.string.begin.python
+  "#js" : comment.line.number-sign.python
+>const answer = 42;
+  "const" : meta.embedded.block.javascript meta.var.expr.js storage.type.js
+  "answer" : meta.embedded.block.javascript meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.constant.js
+  "=" : meta.embedded.block.javascript meta.var.expr.js keyword.operator.assignment.js
+  "42" : meta.embedded.block.javascript meta.var.expr.js constant.numeric.decimal.js
+  ";" : meta.embedded.block.javascript punctuation.terminator.statement.js
+>console.log(answer);
+  "console" : meta.embedded.block.javascript meta.function-call.js variable.other.object.js
+  "." : meta.embedded.block.javascript meta.function-call.js punctuation.accessor.js
+  "log" : meta.embedded.block.javascript meta.function-call.js entity.name.function.js
+  "(" : meta.embedded.block.javascript meta.brace.round.js
+  "answer" : meta.embedded.block.javascript variable.other.readwrite.js
+  ")" : meta.embedded.block.javascript meta.brace.round.js
+  ";" : meta.embedded.block.javascript punctuation.terminator.statement.js
+>"""
+  "\"\"\"" : punctuation.definition.string.end.python
+>
+>STYLES = '''#css
+  "STYLES" : constant.other.caps.python
+  "=" : keyword.operator.assignment.python
+  "'''" : punctuation.definition.string.begin.python
+  "#css" : comment.line.number-sign.python
+>.badge { border-radius: 2px; }
+  "." : meta.embedded.block.css meta.selector.css entity.other.attribute-name.class.css punctuation.definition.entity.css
+  "badge" : meta.embedded.block.css meta.selector.css entity.other.attribute-name.class.css
+  "{" : meta.embedded.block.css meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+  "border-radius" : meta.embedded.block.css meta.property-list.css meta.property-name.css support.type.property-name.css
+  ":" : meta.embedded.block.css meta.property-list.css punctuation.separator.key-value.css
+  "2" : meta.embedded.block.css meta.property-list.css meta.property-value.css constant.numeric.css
+  "px" : meta.embedded.block.css meta.property-list.css meta.property-value.css constant.numeric.css keyword.other.unit.px.css
+  ";" : meta.embedded.block.css meta.property-list.css punctuation.terminator.rule.css
+  "}" : meta.embedded.block.css meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+>'''
+  "'''" : punctuation.definition.string.end.python
+>
+># language=html
+  "# language=html" : comment.line.number-sign.python
+>TEMPLATE = """
+  "TEMPLATE" : constant.other.caps.python
+  "=" : keyword.operator.assignment.python
+  "\"\"\"" : punctuation.definition.string.begin.python
+><section>
+  "<" : meta.embedded.block.html meta.tag.structure.section.start.html punctuation.definition.tag.begin.html
+  "section" : meta.embedded.block.html meta.tag.structure.section.start.html entity.name.tag.html
+  ">" : meta.embedded.block.html meta.tag.structure.section.start.html punctuation.definition.tag.end.html
+>    <h1>Title</h1>
+  "<" : meta.embedded.block.html meta.tag.structure.h1.start.html punctuation.definition.tag.begin.html
+  "h1" : meta.embedded.block.html meta.tag.structure.h1.start.html entity.name.tag.html
+  ">" : meta.embedded.block.html meta.tag.structure.h1.start.html punctuation.definition.tag.end.html
+  "Title" : meta.embedded.block.html
+  "</" : meta.embedded.block.html meta.tag.structure.h1.end.html punctuation.definition.tag.begin.html
+  "h1" : meta.embedded.block.html meta.tag.structure.h1.end.html entity.name.tag.html
+  ">" : meta.embedded.block.html meta.tag.structure.h1.end.html punctuation.definition.tag.end.html
+></section>
+  "</" : meta.embedded.block.html meta.tag.structure.section.end.html punctuation.definition.tag.begin.html
+  "section" : meta.embedded.block.html meta.tag.structure.section.end.html entity.name.tag.html
+  ">" : meta.embedded.block.html meta.tag.structure.section.end.html punctuation.definition.tag.end.html
+>"""
+  "\"\"\"" : punctuation.definition.string.end.python
+>
+># this ordinary comment must not tag anything
+  "#" : comment.line.number-sign.python punctuation.definition.comment.python
+  " this ordinary comment must not tag anything" : comment.line.number-sign.python
+>NOT_TAGGED = """
+  "NOT_TAGGED" : constant.other.caps.python
+  "=" : keyword.operator.assignment.python
+  "\"\"\"" : string.quoted.multi.python punctuation.definition.string.begin.python
+>plain python string
+  "plain python string" : string.quoted.multi.python
+>"""
+  "\"\"\"" : string.quoted.multi.python punctuation.definition.string.end.python
+>

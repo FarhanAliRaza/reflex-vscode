@@ -1,0 +1,300 @@
+>import reflex as rx
+  "import" : keyword.control.import.python
+  "reflex" : 
+  "as" : keyword.control.import.python
+  "rx" : 
+>
+>style = {
+  "style" : meta.embedded.style-dict.python
+  "=" : meta.embedded.style-dict.python keyword.operator.assignment.python
+  "{" : meta.embedded.style-dict.python punctuation.definition.dict.begin.python
+>    "font_family": "Comic Sans MS",
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "font_family" : meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ": " : meta.embedded.style-dict.python punctuation.separator.dict.python
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "Comic" : meta.embedded.style-dict.python meta.embedded.inline.css support.constant.font-name.css
+  " Sans MS" : meta.embedded.style-dict.python meta.embedded.inline.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  "," : meta.embedded.style-dict.python punctuation.separator.element.python
+>    "font_size": "16px",
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "font_size" : meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ": " : meta.embedded.style-dict.python punctuation.separator.dict.python
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "16" : meta.embedded.style-dict.python meta.embedded.inline.css constant.numeric.css
+  "px" : meta.embedded.style-dict.python meta.embedded.inline.css constant.numeric.css keyword.other.unit.px.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  "," : meta.embedded.style-dict.python punctuation.separator.element.python
+>    "box_shadow": "rgba(240, 46, 170, 0.4) 5px 5px",
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "box_shadow" : meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ": " : meta.embedded.style-dict.python punctuation.separator.dict.python
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "rgba" : meta.embedded.style-dict.python meta.embedded.inline.css meta.function.color.css support.function.misc.css
+  "(" : meta.embedded.style-dict.python meta.embedded.inline.css meta.function.color.css punctuation.section.function.begin.bracket.round.css
+  "240" : meta.embedded.style-dict.python meta.embedded.inline.css meta.function.color.css constant.numeric.css
+  "," : meta.embedded.style-dict.python meta.embedded.inline.css meta.function.color.css punctuation.separator.list.comma.css
+  "46" : meta.embedded.style-dict.python meta.embedded.inline.css meta.function.color.css constant.numeric.css
+  "," : meta.embedded.style-dict.python meta.embedded.inline.css meta.function.color.css punctuation.separator.list.comma.css
+  "170" : meta.embedded.style-dict.python meta.embedded.inline.css meta.function.color.css constant.numeric.css
+  "," : meta.embedded.style-dict.python meta.embedded.inline.css meta.function.color.css punctuation.separator.list.comma.css
+  "0.4" : meta.embedded.style-dict.python meta.embedded.inline.css meta.function.color.css constant.numeric.css
+  ")" : meta.embedded.style-dict.python meta.embedded.inline.css meta.function.color.css punctuation.section.function.end.bracket.round.css
+  "5" : meta.embedded.style-dict.python meta.embedded.inline.css constant.numeric.css
+  "px" : meta.embedded.style-dict.python meta.embedded.inline.css constant.numeric.css keyword.other.unit.px.css
+  "5" : meta.embedded.style-dict.python meta.embedded.inline.css constant.numeric.css
+  "px" : meta.embedded.style-dict.python meta.embedded.inline.css constant.numeric.css keyword.other.unit.px.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  "," : meta.embedded.style-dict.python punctuation.separator.element.python
+>    "::selection": {"background_color": "lightblue"},
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "::selection" : meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ":" : meta.embedded.style-dict.python punctuation.separator.colon.python
+  "{" : meta.embedded.style-dict.python
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "background_color" : meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ": " : meta.embedded.style-dict.python punctuation.separator.dict.python
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "lightblue" : meta.embedded.style-dict.python meta.embedded.inline.css support.constant.color.w3c-extended-color-name.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  "}" : meta.embedded.style-dict.python
+  "," : meta.embedded.style-dict.python punctuation.separator.element.python
+>    rx.text: {"color": "blue"},
+  "rx" : meta.embedded.style-dict.python
+  "." : meta.embedded.style-dict.python meta.member.access.python punctuation.separator.period.python
+  "text" : meta.embedded.style-dict.python meta.member.access.python meta.attribute.python
+  ":" : meta.embedded.style-dict.python punctuation.separator.colon.python
+  "{" : meta.embedded.style-dict.python
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "color" : meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ": " : meta.embedded.style-dict.python punctuation.separator.dict.python
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "blue" : meta.embedded.style-dict.python meta.embedded.inline.css support.constant.color.w3c-standard-color-name.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  "}" : meta.embedded.style-dict.python
+  "," : meta.embedded.style-dict.python punctuation.separator.element.python
+>}
+  "}" : meta.embedded.style-dict.python punctuation.definition.dict.end.python
+>
+>app = rx.App(style=style)
+  "app" : 
+  "=" : keyword.operator.assignment.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "App" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "style" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python variable.parameter.function-call.python
+  "=" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python keyword.operator.assignment.python
+  "style" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  ")" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+>
+>
+>def index():
+  "def" : meta.function.python storage.type.function.python
+  "index" : meta.function.python entity.name.function.python
+  "(" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.begin.python
+  ")" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.end.python
+  ":" : meta.function.python punctuation.section.function.begin.python
+>    return rx.box(
+  "return" : keyword.control.flow.python
+  "rx" : 
+  "." : meta.member.access.python punctuation.separator.period.python
+  "box" : meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+>        rx.text(
+  "rx" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python punctuation.separator.period.python
+  "text" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+>            "gradient",
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.begin.python
+  "gradient" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+>            background_image="linear-gradient(271.68deg, #EE756A 0.75%, #756AEE 88.52%)",
+  "background_image" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python support.type.property-name.css
+  "=" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.begin.python
+  "linear-gradient" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css support.function.gradient.css
+  "(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css punctuation.section.function.begin.bracket.round.css
+  "271.68" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css constant.numeric.css
+  "deg" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css constant.numeric.css keyword.other.unit.deg.css
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css punctuation.separator.list.comma.css
+  "#" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css constant.other.color.rgb-value.hex.css punctuation.definition.constant.css
+  "EE756A" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css constant.other.color.rgb-value.hex.css
+  "0.75" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css constant.numeric.css
+  "%" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css constant.numeric.css keyword.other.unit.percentage.css
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css punctuation.separator.list.comma.css
+  "#" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css constant.other.color.rgb-value.hex.css punctuation.definition.constant.css
+  "756AEE" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css constant.other.color.rgb-value.hex.css
+  "88.52" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css constant.numeric.css
+  "%" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css constant.numeric.css keyword.other.unit.percentage.css
+  ")" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css meta.function.gradient.css punctuation.section.function.end.bracket.round.css
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+>            font_weight="bold",
+  "font_weight" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python support.type.property-name.css
+  "=" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.begin.python
+  "bold" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.inline.css support.constant.property-value.css
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+>        ),
+  ")" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+>        rx.text(
+  "rx" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python punctuation.separator.period.python
+  "text" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+>            "hover me",
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.begin.python
+  "hover me" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+>            _hover={"color": "red", "text_decoration": "underline"},
+  "_hover" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python
+  "=" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python keyword.operator.assignment.python
+  "{" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.dict.begin.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "color" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ": " : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.separator.dict.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "red" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python meta.embedded.inline.css support.constant.color.w3c-standard-color-name.css
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.separator.element.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "text_decoration" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ": " : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.separator.dict.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "underline" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python meta.embedded.inline.css support.constant.property-value.css
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.end.python
+  "}" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.dict.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+>            style={"width": "500px", "white-space": "pre-wrap"},
+  "style" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python
+  "=" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python keyword.operator.assignment.python
+  "{" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.dict.begin.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "width" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ": " : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.separator.dict.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "500" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python meta.embedded.inline.css constant.numeric.css
+  "px" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python meta.embedded.inline.css constant.numeric.css keyword.other.unit.px.css
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.separator.element.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "white-space" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ": " : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.separator.dict.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "pre-wrap" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python meta.embedded.inline.css support.constant.property-value.css
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.string.end.python
+  "}" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.style-dict.python punctuation.definition.dict.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+>        ),
+  ")" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+>        rx.image(src="/logo.png", alt="logo", size="3"),
+  "rx" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python punctuation.separator.period.python
+  "image" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "src" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python variable.parameter.function-call.python
+  "=" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python keyword.operator.assignment.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.begin.python
+  "/logo.png" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+  "alt" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python variable.parameter.function-call.python
+  "=" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python keyword.operator.assignment.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.begin.python
+  "logo" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+  "size" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python variable.parameter.function-call.python
+  "=" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python keyword.operator.assignment.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.begin.python
+  "3" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python
+  "\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.end.python
+  ")" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+  "," : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.arguments.python
+>        rx.el.style("""
+  "rx" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python punctuation.separator.period.python
+  "el" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.attribute.python
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python punctuation.separator.period.python
+  "style" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "\"\"\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.begin.python
+>            .container { display: flex; }
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.selector.css entity.other.attribute-name.class.css punctuation.definition.entity.css
+  "container" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.selector.css entity.other.attribute-name.class.css
+  "{" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+  "display" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css meta.property-name.css support.type.property-name.css
+  ":" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css punctuation.separator.key-value.css
+  "flex" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css meta.property-value.css support.constant.property-value.css
+  ";" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css punctuation.terminator.rule.css
+  "}" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+>            .container > p { margin: 0 auto; }
+  "." : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.selector.css entity.other.attribute-name.class.css punctuation.definition.entity.css
+  "container" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.selector.css entity.other.attribute-name.class.css
+  ">" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.selector.css keyword.operator.combinator.css
+  "p" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.selector.css entity.name.tag.css
+  "{" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+  "margin" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css meta.property-name.css support.type.property-name.css
+  ":" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css punctuation.separator.key-value.css
+  "0" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css meta.property-value.css constant.numeric.css
+  "auto" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css meta.property-value.css support.constant.property-value.css
+  ";" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css punctuation.terminator.rule.css
+  "}" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python meta.embedded.block.css meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+>        """),
+  "\"\"\"" : meta.member.access.python meta.function-call.python meta.function-call.arguments.python punctuation.definition.string.end.python
+  ")" : meta.member.access.python meta.function-call.python punctuation.definition.arguments.end.python
+  "," : punctuation.separator.element.python
+>    )
+  "    )" : 
+>
+>
+>def add_style():
+  "def" : meta.function.python storage.type.function.python
+  "add_style" : meta.function.python entity.name.function.python
+  "(" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.begin.python
+  ")" : meta.function.python meta.function.parameters.python punctuation.definition.parameters.end.python
+  ":" : meta.function.python punctuation.section.function.begin.python
+>    return rx.Style({"backgroundColor": "red", "padding": "10px"})
+  "return" : keyword.control.flow.python
+  "rx" : meta.embedded.style-dict.python
+  "." : meta.embedded.style-dict.python meta.member.access.python punctuation.separator.period.python
+  "Style" : meta.embedded.style-dict.python meta.member.access.python meta.function-call.python meta.function-call.generic.python
+  "(" : meta.embedded.style-dict.python meta.member.access.python meta.function-call.python punctuation.definition.arguments.begin.python
+  "{" : meta.embedded.style-dict.python punctuation.definition.dict.begin.python
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "backgroundColor" : meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ": " : meta.embedded.style-dict.python punctuation.separator.dict.python
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "red" : meta.embedded.style-dict.python meta.embedded.inline.css support.constant.color.w3c-standard-color-name.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  "," : meta.embedded.style-dict.python punctuation.separator.element.python
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "padding" : meta.embedded.style-dict.python support.type.property-name.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  ": " : meta.embedded.style-dict.python punctuation.separator.dict.python
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.begin.python
+  "10" : meta.embedded.style-dict.python meta.embedded.inline.css constant.numeric.css
+  "px" : meta.embedded.style-dict.python meta.embedded.inline.css constant.numeric.css keyword.other.unit.px.css
+  "\"" : meta.embedded.style-dict.python punctuation.definition.string.end.python
+  "}" : meta.embedded.style-dict.python punctuation.definition.dict.end.python
+  ")" : 
+>
