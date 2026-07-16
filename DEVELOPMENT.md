@@ -16,11 +16,6 @@ pnpm package        # vsce -> reflex-vscode-*.vsix
 
 Run/debug: open this folder in VS Code and press **F5** ("Launch Extension") — an Extension Development Host opens on `fixtures/workspace/`.
 
-## Acknowledgements
-
-- Injection-grammar approach adapted from [samwillis/python-inline-source](https://github.com/samwillis/python-inline-source) (MIT).
-- Virtual-document request forwarding adapted from Microsoft's [lsp-embedded-request-forwarding](https://github.com/microsoft/vscode-extension-samples/tree/main/lsp-embedded-request-forwarding) sample (MIT).
-
 ## Architecture
 
 `regions/regions.json` is the single source of truth. Two consumers:
