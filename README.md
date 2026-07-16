@@ -33,10 +33,15 @@ Reflex apps routinely embed other languages inside Python — Tailwind classes i
 
 ## Installation
 
-Install **Reflex Embedded Languages** from the VS Code Marketplace, or from the command line:
+The extension is not on the VS Code Marketplace yet. Build and install it from a clone of this repository:
 
-```
-code --install-extension reflex-dev.reflex-vscode
+```bash
+git clone https://github.com/FarhanAliRaza/reflex-vscode.git
+cd reflex-vscode
+pnpm install
+pnpm build
+pnpm package
+code --install-extension reflex-vscode-*.vsix
 ```
 
 ### Tailwind completions
