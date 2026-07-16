@@ -4,6 +4,10 @@ Syntax highlighting and IntelliSense for the CSS, JavaScript, JSX, HTML, and Tai
 
 Reflex apps routinely embed other languages inside Python — Tailwind classes in `class_name`, CSS in `style` dicts, JavaScript in `rx.call_script`, JSX in custom components. VS Code treats all of it as plain strings. This extension makes those strings first-class: proper colors, completions, and hovers, powered by the language services you already have installed.
 
+| Before | After |
+|:---:|:---:|
+| <img src="images/before.png" alt="Embedded JavaScript rendered as a plain Python string" width="100%"> | <img src="images/after.png" alt="Embedded JavaScript with full syntax highlighting" width="100%"> |
+
 ## Features
 
 - **Syntax highlighting** for embedded CSS, JavaScript, JSX, TypeScript, and HTML inside Reflex API calls.
@@ -60,11 +64,6 @@ The command **Reflex: Show Embedded Regions in Active File** lists every region 
 ## Contributing
 
 See [DEVELOPMENT.md](DEVELOPMENT.md) for build instructions, tests, and an overview of the architecture.
-
-## Acknowledgements
-
-- Injection-grammar approach adapted from [samwillis/python-inline-source](https://github.com/samwillis/python-inline-source) (MIT).
-- Virtual-document request forwarding adapted from Microsoft's [lsp-embedded-request-forwarding](https://github.com/microsoft/vscode-extension-samples/tree/main/lsp-embedded-request-forwarding) sample (MIT).
 
 ## License
 
